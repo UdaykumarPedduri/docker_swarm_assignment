@@ -1,0 +1,26 @@
+version: '3'
+services:
+  movie:
+    image: udaykumar008/phonpemovies:v1
+    ports:
+      - "8000:80"
+    deploy:
+      replicas: 3
+  loans:
+    image: udaykumar008/phonpeloans:v1
+    ports:
+      - "8001:80"
+    deploy:
+      replicas: 3
+  metro:
+    image: udaykumar008/phonpemetro:latest
+    ports: 
+      - "8002:80"
+    deploy:
+      replica: 3
+  dth:
+    image: udaykumar008/phonpedth:v1
+    ports:
+      - "8003:80"
+    deploy:
+      replica: 3
