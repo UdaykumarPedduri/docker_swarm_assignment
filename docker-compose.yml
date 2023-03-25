@@ -17,10 +17,10 @@ services:
     ports: 
       - "8002:80"
     deploy:
-      replica: 3
+      replicas: 3
   dth:
     image: udaykumar008/phonpedth:v1
     ports:
       - "8003:80"
     deploy:
-      replica: 3
+      replicas: 3
